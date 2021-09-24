@@ -46,7 +46,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -54,8 +53,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]]
 
 There are many great Telegram APIs available on GitHub, however, I didn't find one that really suit my needs so I created this one. I want to manage & code my telegram bots easily (without being confused in coding), So i think this is it.
 
@@ -79,19 +76,19 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. First [Download TelegramAPI](https://example.com).
+1. First [Download TelegramAPI](https://github.com/HighestDreams/TelegramAPI/archive/refs/heads/master.zip).
 2. Place directory ```TelegramAPI``` into your project directory.
 3. Open your Main bot php file (For example : 
 4. Your Bot.php should be like :
-   ```PHP
-   <?php
-/* Important */
+  ```PHP
+  /* Important */
 use TelegramAPI\Telegram;
 /* Important */
 spl_autoload_register(function ($class){require_once __DIR__ . '/' . str_replace('\\', '/', $class) . '.php';});
 /* Important */
 $Telegram = new Telegram("Your Telegram Bot TOKEN"); /* Get a token from @Botfather */
-   ```
+  ```
+   
 
 
 
@@ -121,10 +118,6 @@ if (!is_null($message->text())) {
         $message->send("This is a message that bot sent.");
     }
 }
-```
-How to add Glass buttons to the message?
-```PHP
-
 ```
 
 _For more examples, please refer to the [TelegramAPI-Example](https://Github.com/HighestDreams/ETelegramAPI-Example)_
